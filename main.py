@@ -4,18 +4,17 @@ import random
 choices = ['rock', 'paper', 'scissors']
 
 # 2. Get the user's choice
-# A while loop is used to ensure the user enters a valid choice.
 while True:
     user_choice = input("Enter your choice (rock, paper, or scissors): ").lower()
     if user_choice in choices:
-        break  # Exit the loop if the choice is valid
+        break
     else:
-        print("Invalid choice. Please choose rock, paper, or scissors.")
+        print("Invalid choice. Please choose rock, paper, or scissors.\n")
 
 # 3. Generate a random choice for the computer
 computer_choice = random.choice(choices)
 
-print(f"\nYou chose: {user_choice}")
+print(f"You chose: {user_choice}")
 print(f"Computer chose: {computer_choice}\n")
 
 # 4. Determine the winner based on the rules
